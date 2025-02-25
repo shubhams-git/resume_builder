@@ -1,2 +1,3 @@
 # resume_builder
-Resume Builder, Analyser and Job Searcher
+Resume Builder, Analyser and Job Searcher.
+
