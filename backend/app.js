@@ -5,13 +5,18 @@ const cors = require('cors')
 
 const app = express();
 app.use(cors({
-    origin: 'http://localhost:5173',  // Replace with your React app's URL
-    methods: ['GET', 'POST'],        // Allow necessary HTTP methods
+    origin: 'http://localhost:5173', 
+    methods: ['GET', 'POST'],        
   }));
 const port = 3000;
 
 // Middleware to parse JSON bodies
 app.use(express.json());
+
+
+const appRouter = express.Router();
+
+app.use('/api/v1', appRouter);
 
 // Route to generate PDF from LaTeX content
 app.post('/generate-pdf', (req, res) => {
