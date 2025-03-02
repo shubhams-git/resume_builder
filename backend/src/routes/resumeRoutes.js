@@ -16,8 +16,6 @@ router.use(authenticateUser);
 // Apply Zod validation middleware
 router.post('/', validateResumeData(ResumeSchema), createResume);
 router.put('/:id', validateResumeData(ResumeSchema), updateResume);
-
-// Other routes...
 router.get('/:id', getResume);
 router.post('/:id/generate', generateResumePDF);
 
