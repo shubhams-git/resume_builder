@@ -12,3 +12,33 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
+
+model User {
+  id       String  @id @default(uuid())
+  name     String
+  email    String  @unique
+  password String
+  resumes  Resume[]
+}
+
+model Resume {
+  id          String  @id @default(uuid())
+  userId      String
+  user        User    @relation(fields: [userId], references: [id])
+
+  personalInfo Json    // Name, phone, email, LinkedIn, GitHub, etc.
+  summary      String? 
+  skills       Json    
+  experience   Json    
+  education    Json    
+
+  projects      Json?  
+  certifications Json? 
+  involvement   Json?  
+  publications  Json?  
+  languages     Json?  
+  references    Json?  
+
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
