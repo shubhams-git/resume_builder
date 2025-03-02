@@ -7,10 +7,12 @@
     "start": "node app.js"
   },
   "dependencies": {
+    "@prisma/client": "^6.4.1",
     "axios": "^1.7.9",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "node-latex": "^3.0.0",
+    "prisma": "^6.4.1",
     "vite": "^6.2.0"
   }
 }
