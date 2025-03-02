@@ -14,31 +14,85 @@ datasource db {
 }
 
 model User {
-  id       String  @id @default(uuid())
-  name     String
-  email    String  @unique
-  password String
-  resumes  Resume[]
+  id        String  @id @default(uuid())
+  name      String
+  username  String  @unique
+  password  String
+  resumes   Resume[]
 }
 
+
 model Resume {
+  id        String  @id @default(uuid())
+  userId    String
+  user      User    @relation(fields: [userId], references: [id])
+  title     String?
+  summary   String?
+  skills    Skill[]
+  experience Experience[]
+  education Education[]
+  projects  Project[]
+  certifications Certification[]
+  involvement Involvement[]
+  createdAt DateTime @default(now())
+}
+
+model Skill {
+  id       String @id @default(uuid())
+  resumeId String
+  resume   Resume @relation(fields: [resumeId], references: [id])
+  category String
+  skills   String[]
+}
+
+model Experience {
   id          String  @id @default(uuid())
-  userId      String
-  user        User    @relation(fields: [userId], references: [id])
+  resumeId    String
+  resume      Resume  @relation(fields: [resumeId], references: [id])
+  company     String
+  position    String
+  location    String?
+  description String?
+  startDate   DateTime
+  endDate     DateTime?
+}
 
-  personalInfo Json    // Name, phone, email, LinkedIn, GitHub, etc.
-  summary      String? 
-  skills       Json    
-  experience   Json    
-  education    Json    
+model Education {
+  id          String @id @default(uuid())
+  resumeId    String
+  resume      Resume @relation(fields: [resumeId], references: [id])
+  institution String
+  degree      String
+  field       String
+  startDate   DateTime
+  endDate     DateTime?
+}
 
-  projects      Json?  
-  certifications Json? 
-  involvement   Json?  
-  publications  Json?  
-  languages     Json?  
-  references    Json?  
+model Project {
+  id          String @id @default(uuid())
+  resumeId    String
+  resume      Resume @relation(fields: [resumeId], references: [id])
+  title       String
+  description String
+  githubLink  String?
+  website     String?
+}
 
-  createdAt    DateTime @default(now())
-  updatedAt    DateTime @updatedAt
+model Certification {
+  id          String @id @default(uuid())
+  resumeId    String
+  resume      Resume @relation(fields: [resumeId], references: [id])
+  name        String
+  organization String
+  date        DateTime
+}
+
+model Involvement {
+  id          String @id @default(uuid())
+  resumeId    String
+  resume      Resume @relation(fields: [resumeId], references: [id])
+  organization String
+  role        String
+  description String
+  date        DateTime
 }
