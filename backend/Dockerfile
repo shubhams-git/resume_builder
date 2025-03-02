@@ -1,23 +1,24 @@
-# Use Node.js 14 as the base image
-FROM node:14
-
-# Install LaTeX dependencies
-RUN apt-get update && apt-get install -y texlive-latex-base texlive-latex-extra
-
-# Set working directory
+# Build stage
+FROM node:20-alpine AS builder
 WORKDIR /app
-
-# Copy package.json and package-lock.json (if exists)
 COPY package*.json ./
-
-# Install Node.js dependencies
-RUN npm install
-
-# Copy application code
+RUN npm ci
 COPY . .
+RUN npm run build
 
-# Expose port 3000
+# Production stage
+FROM node:20-alpine
+WORKDIR /app
+COPY --from=builder /app/node_modules ./node_modules
+COPY --from=builder /app/dist ./dist
+COPY --from=builder /app/src/templates ./src/templates
+COPY --from=builder /app/prisma ./prisma
+
+# Install minimal LaTeX dependencies
+RUN apk add --no-cache texlive texlive-fonts-recommended
+
+# Install production dependencies only
+RUN npm prune --production
+
 EXPOSE 3000
-
-# Command to start the application
-CMD ["node", "app.js"]
+CMD ["node", "dist/server.js"]
