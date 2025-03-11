@@ -1,0 +1,67 @@
+2025-03-09 23:57:20:5720 info: Application starting in development environment
+2025-03-09 23:57:20:5720 info: Express app configured successfully
+2025-03-09 23:57:20:5720 info: Server running in development mode on port 3000
+2025-03-09 23:57:25:5725 error: Failed to connect to database: Can't reach database server at `ep-delicate-snowflake-a57s7db6-pooler.us-east-2.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-delicate-snowflake-a57s7db6-pooler.us-east-2.aws.neon.tech:5432`.
+2025-03-09 23:57:35:5735 info: Application starting in development environment
+2025-03-09 23:57:35:5735 info: Express app configured successfully
+2025-03-09 23:57:35:5735 info: Server running in development mode on port 3000
+2025-03-09 23:57:40:5740 info: Database connection established
+2025-03-10 00:01:02:12 info: SIGINT received: closing server
+2025-03-10 00:01:02:12 info: Server closed - Database connection disconnected
+2025-03-10 00:02:45:245 info: Application starting in production environment
+2025-03-10 00:02:45:245 info: Express app configured successfully
+2025-03-10 00:02:46:246 info: Server running in production mode on port 3000
+2025-03-10 00:02:48:248 info: Database connection established
+2025-03-10 00:02:54:254 info: User logout - unknown
+2025-03-10 00:03:01:31 info: SIGINT received: closing server
+2025-03-10 00:03:01:31 info: Server closed - Database connection disconnected
+2025-03-10 00:03:04:34 info: Application starting in development environment
+2025-03-10 00:03:04:34 info: Express app configured successfully
+2025-03-10 00:03:04:34 info: Server running in development mode on port 3000
+2025-03-10 00:03:06:36 info: Database connection established
+2025-03-10 00:03:07:37 info: User logout - unknown
+2025-03-10 00:03:07:37 http: GET /api/v1/auth/logout 200 13ms
+2025-03-10 00:03:19:319 info: SIGINT received: closing server
+2025-03-10 00:03:19:319 info: Server closed - Database connection disconnected
+2025-03-10 00:03:33:333 info: Application starting in production environment
+2025-03-10 00:03:33:333 info: Express app configured successfully
+2025-03-10 00:03:33:333 info: Server running in production mode on port 3000
+2025-03-10 00:03:36:336 info: User logout - unknown
+2025-03-10 00:03:36:336 info: Database connection established
+2025-03-10 00:03:42:342 info: SIGINT received: closing server
+2025-03-10 00:03:42:342 info: Server closed - Database connection disconnected
+2025-03-10 00:03:50:350 info: Application starting in development environment
+2025-03-10 00:03:50:350 info: Express app configured successfully
+2025-03-10 00:03:50:350 info: Server running in development mode on port 3000
+2025-03-10 00:03:55:355 error: Failed to connect to database: Can't reach database server at `ep-delicate-snowflake-a57s7db6-pooler.us-east-2.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-delicate-snowflake-a57s7db6-pooler.us-east-2.aws.neon.tech:5432`.
+2025-03-10 00:04:25:425 info: Application starting in development environment
+2025-03-10 00:04:25:425 info: Express app configured successfully
+2025-03-10 00:04:25:425 info: Server running in development mode on port 3000
+2025-03-10 00:04:30:430 error: Failed to connect to database: Can't reach database server at `ep-delicate-snowflake-a57s7db6-pooler.us-east-2.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-delicate-snowflake-a57s7db6-pooler.us-east-2.aws.neon.tech:5432`.
+2025-03-10 00:04:34:434 info: Application starting in development environment
+2025-03-10 00:04:34:434 info: Express app configured successfully
+2025-03-10 00:04:34:434 info: Server running in development mode on port 3000
+2025-03-10 00:04:39:439 error: Failed to connect to database: Can't reach database server at `ep-delicate-snowflake-a57s7db6-pooler.us-east-2.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-delicate-snowflake-a57s7db6-pooler.us-east-2.aws.neon.tech:5432`.
+2025-03-10 00:06:15:615 info: Application starting in development environment
+2025-03-10 00:06:15:615 info: Express app configured successfully
+2025-03-10 00:06:15:615 info: Server running in development mode on port 3000
+2025-03-10 00:06:18:618 info: Database connection established
+2025-03-10 00:06:26:626 info: User logout - unknown
+2025-03-10 00:06:26:626 http: GET /api/v1/auth/logout 200 15ms
+2025-03-10 00:08:15:815 info: SIGINT received: closing server
+2025-03-10 00:08:15:815 info: Server closed - Database connection disconnected
+2025-03-10 00:20:48:2048 info: Application starting in development environment
+2025-03-10 00:20:48:2048 info: Express app configured successfully
+2025-03-10 00:20:48:2048 info: Server running in development mode on port 3000
+2025-03-10 00:20:52:2052 info: Database connection established
+2025-03-10 00:20:53:2053 info: User logout - unknown
+2025-03-10 00:20:53:2053 http: GET /api/v1/auth/logout 200 14ms
+2025-03-10 00:20:53:2053 http: GET /favicon.ico 500 2ms

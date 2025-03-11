@@ -1,0 +1,4 @@
+{"level":"info","message":"Server running in development mode on port 3000","timestamp":"2025-03-09T12:34:35.967Z"}
+{"level":"info","message":"Database connection established","timestamp":"2025-03-09T12:34:38.868Z"}
+{"level":"info","message":"SIGINT received: closing server","timestamp":"2025-03-09T12:57:08.759Z"}
+{"level":"info","message":"Server closed - Database connection disconnected","timestamp":"2025-03-09T12:57:08.788Z"}
