@@ -1,0 +1,53 @@
+2025-03-10 16:12:19:1219 info: Application starting in development environment
+2025-03-10 16:12:19:1219 info: Express app configured successfully
+2025-03-10 16:12:19:1219 info: Server running in development mode on port 3000
+2025-03-10 16:12:22:1222 info: Database connection established
+2025-03-10 16:12:31:1231 info: User logout - unknown
+2025-03-10 16:12:31:1231 http: GET /api/v1/auth/logout 200 27ms
+2025-03-10 16:12:31:1231 http: GET /favicon.ico 500 3ms
+2025-03-10 16:12:39:1239 info: User logout - unknown
+2025-03-10 16:12:39:1239 http: GET /api/v1/auth/logout 304 6ms
+2025-03-10 16:12:40:1240 http: GET /favicon.ico 500 3ms
+2025-03-10 16:12:42:1242 info: User logout - unknown
+2025-03-10 16:12:42:1242 http: GET /api/v1/auth/logout 304 3ms
+2025-03-10 16:12:42:1242 http: GET /favicon.ico 500 4ms
+2025-03-10 16:12:53:1253 info: User logout - unknown
+2025-03-10 16:12:53:1253 http: GET /api/v1/auth/logout 304 5ms
+2025-03-10 16:12:53:1253 http: GET /favicon.ico 500 1ms
+2025-03-10 16:13:01:131 info: User logout - unknown
+2025-03-10 16:13:01:131 http: GET /api/v1/auth/logout 304 5ms
+2025-03-10 16:13:01:131 http: GET /favicon.ico 500 3ms
+2025-03-10 19:10:46:1046 info: SIGINT received: closing server
+2025-03-10 19:10:46:1046 info: Server closed - Database connection disconnected
+2025-03-10 19:11:13:1113 debug: Logger initialized in development mode with level: debug
+2025-03-10 19:11:14:1114 info: Application starting in development environment
+2025-03-10 19:11:14:1114 info: Express app configured successfully
+2025-03-10 19:11:14:1114 debug: Server initialization started
+2025-03-10 19:11:14:1114 debug: Attempting database connection...
+2025-03-10 19:11:14:1114 info: Server running in development mode on port 3000
+2025-03-10 19:11:14:1114 debug: Server startup completed successfully
+2025-03-10 19:11:17:1117 info: Database connection established
+2025-03-10 19:11:17:1117 debug: Database connection details:
+2025-03-10 19:11:47:1147 info: SIGINT received: closing server
+2025-03-10 19:11:47:1147 debug: Server shutdown initiated
+2025-03-10 19:11:47:1147 info: Server closed - Database connection disconnected
+2025-03-10 19:44:20:4420 info: Application starting in production environment
+2025-03-10 19:44:20:4420 info: Express app configured successfully
+2025-03-10 19:44:20:4420 info: Server running in production mode on port 3000
+2025-03-10 19:44:23:4423 info: Database connection established
+2025-03-10 19:44:34:4434 info: SIGINT received: closing server
+2025-03-10 19:44:34:4434 info: Server closed - Database connection disconnected
+2025-03-10 19:44:40:4440 info: Application starting in development environment
+2025-03-10 19:44:40:4440 info: Express app configured successfully
+2025-03-10 19:44:40:4440 info: Server running in development mode on port 3000
+2025-03-10 19:44:42:4442 info: Database connection established
+2025-03-10 19:53:59:5359 info: SIGINT received: closing server
+2025-03-10 19:53:59:5359 info: Server closed - Database connection disconnected
+2025-03-11 20:58:24:5824 info: Application starting in development environment
+2025-03-11 20:58:24:5824 info: Express app configured successfully
+2025-03-11 20:58:25:5825 info: Server running in development mode on port 3000
+2025-03-11 20:58:28:5828 info: Database connection established
+2025-03-11 20:58:51:5851 info: User logout - unknown
+2025-03-11 20:58:51:5851 http: GET /api/v1/auth/logout 200 7ms
+2025-03-11 21:01:34:134 info: SIGINT received: closing server
+2025-03-11 21:01:34:134 info: Server closed - Database connection disconnected

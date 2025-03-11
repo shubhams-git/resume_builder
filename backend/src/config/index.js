@@ -1,7 +1,13 @@
 import dotenv from 'dotenv';
 import { cleanEnv, str, port } from 'envalid';
+import path from 'path';
+import { fileURLToPath } from 'url';
 
-dotenv.config();
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+// Load .env file from backend root directory
+dotenv.config({ path: path.resolve(__dirname, '../../.env') });
 
 const env = cleanEnv(process.env, {
   PORT: port({ default: 3000 }),

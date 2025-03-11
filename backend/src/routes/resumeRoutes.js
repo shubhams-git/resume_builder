@@ -9,14 +9,13 @@ import { authenticateUser } from '../middleware/authMiddleware.js';
 import { validateResumeData } from '../middleware/validateMiddleware.js';
 import { ResumeSchema } from '../utils/schemas.js';
 
-const router = express.Router();
+const resumeRoutes = express.Router();
 
-router.use(authenticateUser);
+resumeRoutes.use(authenticateUser);
 
-// Apply Zod validation middleware
-router.post('/', validateResumeData(ResumeSchema), createResume);
-router.put('/:id', validateResumeData(ResumeSchema), updateResume);
-router.get('/:id', getResume);
-router.post('/:id/generate', generateResumePDF);
+resumeRoutes.post('/',validateResumeData(ResumeSchema), createResume);
+resumeRoutes.get('/:id', getResume);
+resumeRoutes.put('/:id', validateResumeData(ResumeSchema), updateResume);
+resumeRoutes.post('/:id/generate', generateResumePDF);
 
-export default router;
+export default resumeRoutes;
